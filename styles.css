@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/*************************** FONTS */
+h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.7rem;
+    color: white;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: white;
+}
+
+/*************************** LAYOUT */
+
+.outer-container {
+    margin: 3rem 1.5rem;
+}
+
+.car-tile {
+    min-height: 25rem;
+    padding: 2.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sedan-tile {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 2rem 2rem 0 0;
+}
+
+.suv-tile {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-tile {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 2rem 2rem;
+}
+
+button {
+    color: #000;
+    mix-blend-mode: screen;
+    text-transform: capitalize;
+    max-width: 10rem;
+    padding: 1rem;
+    margin: 1rem 0 ;
+    border-radius: 2rem;
+    border: none;
+}
+
+button:hover {
+    outline: 0.2rem solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*************************** MEDIA QUERIES */
+
+@media (min-width: 880px) {
+
+    .outer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 3rem 6rem;
+    }
+
+    .car-tile {
+        max-width: 20rem;
+        min-height: 40rem;
+    }
+
+    .sedan-tile {
+        border-radius: 2rem 0 0 2rem;
+    }
+
+    .luxury-tile {
+        border-radius: 0 2rem 2rem 0;
+    }
+
+}
